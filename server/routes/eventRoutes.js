@@ -5,7 +5,7 @@ const router = express.Router();
 
 const { createEvent, getEvents } = require("../controllers/eventController");
 
-router.post("/", verifyToken, createEvent);
-router.get("/", verifyToken, getEvents);
+router.post("/", createEvent);
+router.get("/", getEvents);
 
 module.exports = router;

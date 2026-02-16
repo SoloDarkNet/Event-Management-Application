@@ -47,6 +47,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/register", registrationRoutes);
 
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get("/{*any}", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

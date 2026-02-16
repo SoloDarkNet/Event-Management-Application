@@ -1,15 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: " https://event-management-application-1-8hnh.onrender.com/api",
-});
-
-api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("token");
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
+  baseURL: "http://localhost:5000/api",
 });
 
 export default api;
