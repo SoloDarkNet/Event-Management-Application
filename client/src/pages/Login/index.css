@@ -1,0 +1,21 @@
+.login-button {
+  background-image: linear-gradient(to right, #89eea4, #7eb470);
+  border: none;
+  color: rgb(71, 68, 68);
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  border-radius: 6px;
+}
+.login-button:hover {
+  background-image: linear-gradient(to right, #7eb470, #89eea4);
+}
+.login-container {
+  background-image: linear-gradient(to bottom, #d5efdf, #a8dfd3, #a1f3ba);
+  height: 100vh;
+}
